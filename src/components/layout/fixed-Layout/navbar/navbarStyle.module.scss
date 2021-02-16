@@ -1,0 +1,44 @@
+$main_color:#f33535;
+
+@media (max-width: 991px) { 
+    .menuDesktop{
+        display: none;
+    }
+ }
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin-top: 25px ;
+    background-color: #ffffff;
+    padding-bottom: 20px;
+     box-shadow:  -2px 9px 9px 0px #00000026;
+    
+}
+.itemsHome{
+    font-weight: bold;
+    color:$main_color;
+    margin-left: 30px;
+}
+.items{
+    margin-left: 20px;
+    font-weight: bold;
+    
+}
+
+.sticky{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    box-shadow:5px 11px 12px 1px #0000ff33;
+    width: 100%;
+    padding: 20px 0;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left:0;
+    transition:all 0.3s;
+    z-index: 100;
+}

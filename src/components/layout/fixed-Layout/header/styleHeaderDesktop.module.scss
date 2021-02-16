@@ -1,0 +1,62 @@
+@media (max-width: 991px) { 
+    .headerDesktop{
+        display: none;
+    }
+ }
+ .headerDesktop{
+     position:relative;
+    
+ }
+ .mainLogo{
+    margin-top: 30px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.inputSearch{
+    width: 60%;
+    height: 50px;
+    margin-top: 30px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-right: none;
+    margin-left: 20px;
+    
+}
+.inputSearch::placeholder{
+    position: relative;
+    left:20px
+}
+.inputSearch:focus{
+    outline: 0 ;
+}
+
+.btnSearch{
+   width: 70px;
+   border: none;
+   position: absolute;
+   bottom: 5px;
+   color: white;
+   background-color: #f33535;
+   border-top-right-radius: 5px;
+   border-bottom-right-radius: 5px;
+  cursor: pointer;
+}
+.btnSearch:hover,.loginBtn:hover{
+    background-color: black;
+    cursor: pointer;
+}
+.loginBtn{
+    border: none;
+    background-color: #f33535;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 30px;
+    margin-top: 40px;
+    margin-left: 20%;
+}
+
+.basket{
+    cursor: pointer;
+    
+}
