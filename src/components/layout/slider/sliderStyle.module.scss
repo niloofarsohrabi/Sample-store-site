@@ -1,0 +1,161 @@
+.slides{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+    position: relative;
+}
+
+.sliderImage img{
+   width: 100vw;
+    height: 400px;
+    position: relative;
+    top:15px;
+    border-radius: 5px;
+}
+
+.rightArrow{
+    position: absolute;
+    top: 200px;
+    right:8%;
+    color: white;
+    z-index: 99;
+    cursor: pointer;
+
+}
+.leftArrow{
+    position: absolute;
+    top: 200px;
+    left:8%;
+    color: white;
+    z-index: 99;
+    cursor: pointer;
+}
+.slide{
+    transition-duration: 1s ease;
+}
+.slideActive{
+    transition-duration: 1s;
+    transform: scale(1.08);
+}
+.messgaeOnSliderOne{
+    position: absolute;
+    bottom:250px;
+    left: 150px;
+    color: white;
+    font-size:20px;
+    animation-name: animationTextOneSlider;
+    animation-duration: 1s;
+    
+}
+.messgaeOnSliderTwo{
+    position: absolute;
+    bottom:190px;
+    left:150px;
+    color: white;
+    opacity: 0;
+    font-size: 38px;
+    animation-name: animationTextTwoSlider;
+    animation-duration: 1.2s;
+    animation-delay: 1.2s;
+    animation-fill-mode: both;
+    
+}
+.messgaeOnSliderThree{
+    position: absolute;
+    bottom:120px;
+    left:150px;
+    color: white;
+    font-size: 45px;
+    animation-name: animationTextThreeSlider;
+    animation-duration:1s ;
+    animation-delay: 2.8s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+.buttonSlider{
+    position: absolute;
+    bottom:20px;
+    left:150px;
+    color: black;
+    background-color: white;
+    border: none;
+    padding:15px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    animation-name: animationSliderButton;
+    animation-duration:1s ;
+    animation-delay: 4s;
+    animation-fill-mode: both;
+    opacity: 0;
+ 
+
+}
+.buttonSlider:focus{
+    outline: 0;
+}
+.buttonSlider:hover{
+    color: white;
+    background-color: #f33535;
+}
+
+@keyframes animationTextOneSlider{
+    from{
+        bottom:260px;
+        left: 150px;
+    }
+    to{
+        bottom:250px;
+        left:150px;
+    }
+}
+@keyframes animationTextTwoSlider{
+    from{
+        bottom: 190px;
+        left:100px;
+        opacity: 0;
+    }
+    to{
+        bottom:190px;
+        left:150px;
+        opacity: 1;
+    }
+}
+@keyframes animationTextThreeSlider{
+    from{
+        bottom:120px;
+        left:150px;
+    }
+    
+    to{
+        bottom:120px;
+        left:150px;
+        opacity: 1;
+    }
+}
+@keyframes animationSliderButton{
+    from{
+       transition-duration: 1s ease;
+       transform: skew(1.08);
+       opacity: 0;
+    }
+    to{
+        bottom:50px;
+        left:150px;
+        opacity: 1;
+    }
+}
+
+@media (max-width:576px){
+    .messgaeOnSliderOne{
+        font-size:15px;
+      color: #f33535;
+    }
+    .messgaeOnSliderTwo{
+        font-size:20px;color: c
+    }
+    .messgaeOnSliderThree{
+        font-size:20px;color: #f33535;
+    }
+}

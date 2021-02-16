@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react'
 import { Header } from '../../layout/fixed-Layout/header'
 import { NavBar } from '../../layout/fixed-Layout/navbar'
 import { NavBarMobile } from '../../layout/mobile-Layout/navbar-Mobile'
-import {MobileHeader} from '../../layout/mobile-Layout/header-Mobile'
-
+import { MobileHeader } from '../../layout/mobile-Layout/header-Mobile'
+import { sliderData } from '../../layout/slider/sliderData'
+import { ImageSlider } from '../../layout/slider/imagSlider'
 export const MainPage = () => {
 
     const [shouldScrollNav, setShouldScrollNav] = useState(false);
@@ -42,15 +43,19 @@ export const MainPage = () => {
             {
                 windowSize > 991 ?
                     <Header>
+                      
                         <NavBar shouldScrollNav={shouldScrollNav} />
+                      
                     </Header>
+                       
                     :
                     <MobileHeader>
                         <NavBarMobile />
+
                     </MobileHeader>
 
             }
-
+ <ImageSlider sliders={sliderData} />
 
         </div>
     )
